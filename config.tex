@@ -1,0 +1,281 @@
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow,makecell}
+\usepackage{breqn}
+\usepackage{mathrsfs}
+\usepackage{datetime}
+\usepackage{subfiles}
+\usepackage[amsmath,thmmarks]{ntheorem}
+\usepackage{stackengine}
+\usepackage{subcaption}
+\usepackage{wasysym}
+\usepackage{fontawesome}
+
+\usepackage{colortbl}
+\usepackage{array}
+
+
+\theorembodyfont{\normalfont}
+\newtheorem{theorem}{定理}[chapter]
+\newtheorem{lemma}{引理}[chapter]
+% \newtheorem{proof}{证明}[chapter]
+\newtheorem{remark}{注}[chapter]
+\newtheorem{definition}{定义}[chapter]
+\newtheorem{ass}{假设}[chapter]
+\newtheorem{prop}{命题}[chapter]
+
+{
+	\theoremstyle{nonumberplain}
+	\theoremheaderfont{\bfseries}
+	\theorembodyfont{\normalfont}
+	\theoremsymbol{\mbox{$ \Box $}}
+	\newtheorem{proof}{证明}
+}
+
+
+\newcommand{\calosymbol}[1]{\text{\usefont{U}{BOONDOX-calo}{m}{n}#1}}
+\newcommand{\xrowht}[2][0]{\addstackgap[.5\dimexpr#2\relax]{\vphantom{#1}}}
+
+% Ref config 
+\newcommand{\asref}[1]{假设 \ref{#1}}
+\newcommand{\chref}[1]{第\ref{#1}章}
+\newcommand{\lmref}[1]{引理 \ref{#1}}
+\newcommand{\thref}[1]{定理 \ref{#1}}
+\newcommand{\coref}[1]{推论 \ref{#1}}
+\newcommand{\figref}[1]{\textrm{图}\ref{#1}}
+\newcommand{\tabref}[1]{表 \ref{#1}}
+\newcommand{\alref}[1]{算法 \ref{#1}}
+\newcommand{\appref}[1]{附录 \ref{#1}}
+\newcommand{\secref}[1]{章 \ref{#1}}
+\newcommand{\remref}[1]{注 \ref{#1}}
+\newcommand{\proref}[1]{命题 \ref{#1}}
+\newcommand{\Appref}[1]{附录 \ref{#1}}
+
+% mathcal font
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cJ}{\mathcal{J}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cV}{\mathcal{V}}
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cZ}{\mathcal{Z}}
+
+% mathbf font
+\newcommand{\ba}{\mathbf{a}}
+\newcommand{\bb}{\mathbf{b}}
+\newcommand{\bc}{\mathbf{c}}
+\newcommand{\bd}{\mathbf{d}}
+\newcommand{\be}{\mathbf{e}}
+\newcommand{\bbf}{\mathbf{f}}
+\newcommand{\bg}{\mathbf{g}}
+\newcommand{\bh}{\mathbf{h}}
+\newcommand{\bi}{\mathbf{i}}
+\newcommand{\bj}{\mathbf{j}}
+\newcommand{\bk}{\mathbf{k}}
+\newcommand{\bl}{\mathbf{l}}
+\newcommand{\bbm}{\mathbf{m}}
+\newcommand{\bn}{\mathbf{n}}
+\newcommand{\bo}{\mathbf{o}}
+\newcommand{\bp}{\mathbf{p}}
+\newcommand{\bq}{\mathbf{q}}
+\newcommand{\br}{\mathbf{r}}
+\newcommand{\bs}{\mathbf{s}}
+\newcommand{\bt}{\mathbf{t}}
+\newcommand{\bu}{\mathbf{u}}
+\newcommand{\bv}{\mathbf{v}}
+\newcommand{\bw}{\mathbf{w}}
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\by}{\mathbf{y}}
+\newcommand{\bz}{\mathbf{z}}
+
+\newcommand{\bA}{\mathbf{A}}
+\newcommand{\bB}{\mathbf{B}}
+\newcommand{\bC}{\mathbf{C}}
+\newcommand{\bD}{\mathbf{D}}
+\newcommand{\bE}{\mathbf{E}}
+\newcommand{\bF}{\mathbf{F}}
+\newcommand{\bG}{\mathbf{G}}
+\newcommand{\bH}{\mathbf{H}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\bJ}{\mathbf{J}}
+\newcommand{\bK}{\mathbf{K}}
+\newcommand{\bL}{\mathbf{L}}
+\newcommand{\bM}{\mathbf{M}}
+\newcommand{\bN}{\mathbf{N}}
+\newcommand{\bO}{\mathbf{O}}
+\newcommand{\bP}{\mathbf{P}}
+\newcommand{\bQ}{\mathbf{Q}}
+\newcommand{\bR}{\mathbf{R}}
+\newcommand{\bS}{\mathbf{S}}
+\newcommand{\bT}{\mathbf{T}}
+\newcommand{\bU}{\mathbf{U}}
+\newcommand{\bV}{\mathbf{V}}
+\newcommand{\bW}{\mathbf{W}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bY}{\mathbf{Y}}
+\newcommand{\bZ}{\mathbf{Z}}
+
+\newcommand{\bbC}{\mathbb{C}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbQ}{\mathbb{Q}}
+\newcommand{\bbE}{\mathbb{E}}
+\newcommand{\bbN}{\mathbb{N}}
+
+% symbol
+\newcommand{\bzero}{\mathbf{0}}
+\newcommand{\bone}{\mathbf{1}}
+\newcommand{\balpha}{{\boldsymbol\alpha}}
+\newcommand{\bzeta}{{\boldsymbol\zeta}}
+\newcommand{\bbeta}{{\boldsymbol\eta}}
+\newcommand{\bSigma}{{\boldsymbol\Sigma}}
+\newcommand{\blambda}{{\boldsymbol\lambda}}
+\newcommand{\bLambda}{{\boldsymbol\Lambda}}
+\newcommand{\bPhi}{{\boldsymbol\Phi}}
+\newcommand{\bphi}{{\boldsymbol\phi}}
+\newcommand{\bOmega}{{\boldsymbol\Omega}}
+\newcommand{\bomega}{{\boldsymbol\omega}}
+\newcommand{\bXi}{{\boldsymbol\Xi}}
+\newcommand{\bPsi}{{\boldsymbol\Psi}}
+\newcommand{\bxi}{{\boldsymbol\xi}}
+\newcommand{\bepsilon}{{\boldsymbol\epsilon}}
+\newcommand{\bPi}{{\boldsymbol\Pi}}
+\newcommand{\bpi}{{\boldsymbol\pi}}
+\newcommand{\bUpsilon}{{\boldsymbol\Upsilon}}
+\newcommand{\bTheta}{{\boldsymbol\Theta}}
+\newcommand{\bGamma}{{\boldsymbol\Gamma}}
+\newcommand{\bDelta}{{\boldsymbol\Delta}}
+\newcommand{\bdelta}{{\boldsymbol\delta}}
+\newcommand{\fortext}{\textrm{for}}
+\newcommand{\etakm}[2]{{\eta_{#1}\left(#2 \right) }}
+\newcommand{\sym}[1]{\mathrm{sym}\left( #1 \right) }
+\newcommand{\skeww}[1]{\mathrm{skew}\left( #1 \right) }
+
+\newcommand{\Pmatrix}[1]{\begin{array}{ll}#1\end{array}}
+\newcommand{\Exp}{{\mathbb{E}}}
+\newcommand{\expect}[1]{\Exp\left\{#1\right\}}
+\newcommand{\expecth}[2]{\Exp_{\bh_{#1}}\left\{#2\right\}}
+\newcommand{\expectH}[2]{\Exp_{\bH_{#1}}\left\{#2\right\}}
+\newcommand{\expcnd}[2]{\Exp\left\{\cnd{#1}{#2}\right\}}
+% mode operator
+\newcommand{\mode}[2]{\mathrm{mod}\left({#1},{#2}\right)}
+% Variance value
+\newcommand{\var}[1]{\mathbb{V}\left\{#1\right\}}
+\newcommand{\varcnd}[2]{\mathbb{V}\left\{\cnd{#1}{#2}\right\}}
+% Trace operator
+\newcommand{\tr}[1]{\mathrm{tr}\left(#1\right)}
+% Diag operator
+\newcommand{\diag}[1]{\mathrm{diag}\left(#1\right)}
+\newcommand{\blkdiag}[1]{\mathsf{blkdiag}\left\{#1\right\}}
+% logdet operator
+\newcommand{\logdet}[1]{\log\det\left(#1\right)}
+% absolute value operator
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\sqrabs}[1]{\left|#1\right|^{2}}
+% cardinality operator
+\newcommand{\card}[1]{\mathrm{card}\left\{#1\right\}}
+% log2 operator
+\newcommand{\logtwo}[1]{\log_{2}\left(#1\right)}
+%  norm operator
+\newcommand{\norm}[1]{\left\|#1\right\|}
+% l2 norm operator
+\newcommand{\normt}[1]{\left\|#1\right\|_{2}}
+\newcommand{\sqrnormt}[1]{\left\|#1\right\|_{2}^{2}}
+% Frobenius norm operator
+\newcommand{\normf}[1]{\left\|#1\right\|_{\mathrm{F}}}
+\newcommand{\sqrnormf}[1]{\left\|#1\right\|_{\mathrm{F}}^{2}}
+% Inner product operator
+\newcommand{\inpro}[2]{\langle #1 , #2\rangle}
+% fractional
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\oneon}[1]{\frac{1}{#1}}
+% ldots
+\newcommand{\oneldots}[1]{1,2,\ldots,#1} %1,2,...,K
+\newcommand{\twoldots}[1]{2,3,\ldots,#1} %2,3,...,K
+% partial and integration
+\newcommand{\intd}{\mathrm{d}}
+\newcommand{\intdx}[1]{\intd #1}
+\newcommand{\pd}[1]{ {\frac{ \intd }{ \intd {#1} }} }
+\newcommand{\ppd}[1]{ {\frac{ \partial }{ \partial {#1} }} }
+\newcommand{\pppd}[2]{ {\frac{ \partial {#1} }{ \partial {#2} }} }
+% Inverse
+\newcommand{\inv}[1]{#1^{-1}}%inverse
+\newcommand{\sqrinv}[1]{#1^{-2}}%inverse
+\newcommand{\pinv}[1]{#1^{\dagger}}%pseudo inverse
+% Inverse
+\newcommand{\fpartial}[1]{\frac{\partial}{\partial #1}}
+% Gaussian distribution
+\newcommand{\GN}[2]{\mathcal{N}\left( #1 , #2\right) }
+\newcommand{\GCN}[2]{\mathcal{CN}\left( #1 , #2\right) }
+% arg operation
+\newcommand{\argmax}[1]{\mathop{\arg\max}\limits_{#1}}
+\newcommand{\argmin}[1]{\mathop{\arg\min}\limits_{#1}}
+\newcommand{\mini}[1]{\mathop{\mathrm{minimize}}\limits_{#1}}
+\newcommand{\minis}[1]{\mathop{\mathrm{min}}\limits_{#1}}
+% \renewcommand{\st}{\mathrm{subject}\quad\mathrm{to}}
+% tricky ith thingy
+\newcommand{\ith}[1]{\mbox{$#1^{\text{th}}$}}
+\newcommand{\ist}[1]{\mbox{$#1^{\text{st}}$}}
+% to infinity
+\newcommand{\tozero}[1]{#1 \to 0}
+\newcommand{\toinf}[1]{#1 \to\infty}
+\newcommand{\limzero}[1]{\lim_{\tozero{#1}}}
+\newcommand{\liminfty}[1]{\lim_{\toinf{#1}}}
+% delta function
+\newcommand{\delfunc}[1]{\delta\left(#1\right)}
+% basic vector
+\newcommand{\basvec}[1]{\be_{#1}}%i-th column of the identity matrix
+% element of the vector/matrix
+\newcommand{\vecele}[2]{\left[#1\right]_{#2}}
+
+% set difference
+\newcommand{\setdif}[2]{#1\backslash #2}
+% element to set
+\newcommand{\eletoset}[1]{\left\{#1\right\}}
+% cosine theta
+\newcommand{\costh}[2]{\cos\theta\left(#1,#2\right)}
+\newcommand{\thcos}[2]{\theta\left(#1,#2\right)}
+% gradient
+\newcommand{\gra}{\text{grad}}
+% db
+\newcommand{\dB}[1]{#1 dB}
+\newcommand{\kmh}[1]{#1 km/h}
+% Riemannian metric
+\newcommand{\barMetric}[3]{\bar{g}_{#1}\left( #2, #3\right) }
+\newcommand{\Metric}[3]{ g_{#1}\left( #2, #3\right) }
+% Riemannian metric
+\newcommand{\rmetric}[4]{m^{#1}_{#2} \left({#3},{#4}\right) }
+% constant e 
+\newcommand{\me}{\mathrm{e}}
+% unit imaginary number
+\newcommand{\mj}{\jmath}
+\newcommand{\zeroldots}[1]{0,1,\ldots,#1} %1,2,...,K
+% differential operator
+\newcommand{\dif}[1]{\mathrm{D}{#1}}
+% Fomular Space 
+\newcommand{\FormulaSpace}{\setlength{\abovedisplayskip}{3pt}\setlength{\belowdisplayskip}{3pt}}
